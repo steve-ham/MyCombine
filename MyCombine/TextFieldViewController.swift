@@ -16,7 +16,7 @@ class TextFieldViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: textField)
-            .receive(on: DispatchQueue.main)
+            .debounce(for: 0.5, scheduler: RunLoop.main)
             .sink { notification in
             if let tf = notification.object as? UITextField {
                 print("hsteve tf.text \(tf.text!)")
