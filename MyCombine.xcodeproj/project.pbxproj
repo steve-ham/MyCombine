@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA509FF2237BF28500F5A559 /* Example1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509FF1237BF28500F5A559 /* Example1ViewController.swift */; };
 		AAD2FD752366E01700985858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD742366E01700985858 /* AppDelegate.swift */; };
 		AAD2FD772366E01700985858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD762366E01700985858 /* SceneDelegate.swift */; };
 		AAD2FD792366E01700985858 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD782366E01700985858 /* TableViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA509FF1237BF28500F5A559 /* Example1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1ViewController.swift; sourceTree = "<group>"; };
 		AAD2FD712366E01700985858 /* MyCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2FD742366E01700985858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD2FD762366E01700985858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				AAD2FD762366E01700985858 /* SceneDelegate.swift */,
 				AAD2FD782366E01700985858 /* TableViewController.swift */,
 				AAD2FD882366E19F00985858 /* TextFieldViewController.swift */,
+				AA509FF1237BF28500F5A559 /* Example1ViewController.swift */,
 				AAD2FD7A2366E01700985858 /* Main.storyboard */,
 				AAD2FD7D2366E01700985858 /* Assets.xcassets */,
 				AAD2FD7F2366E01700985858 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				AAD2FD892366E19F00985858 /* TextFieldViewController.swift in Sources */,
 				AAD2FD792366E01700985858 /* TableViewController.swift in Sources */,
 				AAD2FD752366E01700985858 /* AppDelegate.swift in Sources */,
+				AA509FF2237BF28500F5A559 /* Example1ViewController.swift in Sources */,
 				AAD2FD772366E01700985858 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
