@@ -27,11 +27,11 @@ class Example1VC: UIViewController {
         // Version 1
 //        let graduationPublisher = NotificationCenter.Publisher(center: .default, name: .graduated, object: nil)
 //
-//        let gradeSubscriber = Subscribers.Assign(object: student, keyPath: \.grade)
-//
 //        let converter = Publishers.Map(upstream: graduationPublisher) { notification in
 //            notification.userInfo?["NewGrade"] as? Int ?? 0
 //        }
+//
+//        let gradeSubscriber = Subscribers.Assign(object: student, keyPath: \.grade)
 //
 //        converter.subscribe(gradeSubscriber)
         
