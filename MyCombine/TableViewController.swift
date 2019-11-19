@@ -8,13 +8,17 @@
 
 import UIKit
 
+// https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b
+
 class TableViewController: UITableViewController {
     
     let viewControllers = [UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "TextFieldViewController") as! TextFieldViewController,
                            UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Example1VC") as! Example1VC,
+                           UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Example2VC") as! Example2VC,
                            UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "eraseToAnyPublisherVC") as! eraseToAnyPublisherVC,
-                           MergeVC(), CurrentValueSubjectVC(), PublishersSequenceVC(), PassthroughSubjectVC(), assignVC()]
-
+                           UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ZipAndCombineLatestVC") as! ZipAndCombineLatestVC,
+                           MergeVC(), CurrentValueSubjectVC(), PublishersSequenceVC(), PassthroughSubjectVC(), assignVC(), handleEventsVC(), subscribeAndReceiveVC()]
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewControllers.count
     }

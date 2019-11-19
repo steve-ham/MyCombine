@@ -39,15 +39,15 @@ class Example1VC: UIViewController {
         // Version 2
 //        _ = NotificationCenter.default.publisher(for: .graduated, object: nil)
 //            .map { $0.userInfo?["NewGrade"] as? Int ?? 0 }
-//            .subscribe(on: RunLoop.current)
+//            .receive(on: RunLoop.current)
 //            .assign(to: \.grade, on: student)
         
         // Version 3
         _ = NotificationCenter.default.publisher(for: .graduated, object: nil)
             .compactMap { $0.userInfo?["NewGrade"] as? Int } // Prevents going further down the stream
-            .filter { $0 >= 5 }
+            .filter { $0 >= 3 }
             .prefix(3) // After receiving 3, cancel upstream and send completion to downstream.
-            .subscribe(on: RunLoop.current)
+            .receive(on: RunLoop.current)
             .assign(to: \.grade, on: student)
     }
     
