@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA509FF2237BF28500F5A559 /* Example1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509FF1237BF28500F5A559 /* Example1ViewController.swift */; };
+		AA37F56723828106003E70A6 /* JustVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56623828106003E70A6 /* JustVC.swift */; };
+		AA37F56923828149003E70A6 /* CurrentValueSubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56823828149003E70A6 /* CurrentValueSubjectVC.swift */; };
+		AA37F56B23828193003E70A6 /* PublishersSequenceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56A23828193003E70A6 /* PublishersSequenceVC.swift */; };
+		AA37F56D23828259003E70A6 /* PassthroughSubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56C23828259003E70A6 /* PassthroughSubjectVC.swift */; };
+		AA37F56F238282B3003E70A6 /* assignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56E238282B3003E70A6 /* assignVC.swift */; };
+		AA509FF2237BF28500F5A559 /* Example1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509FF1237BF28500F5A559 /* Example1VC.swift */; };
+		AA6BC7BE23823C4900B57D70 /* MergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BC7BD23823C4900B57D70 /* MergeVC.swift */; };
 		AAD2FD752366E01700985858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD742366E01700985858 /* AppDelegate.swift */; };
 		AAD2FD772366E01700985858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD762366E01700985858 /* SceneDelegate.swift */; };
 		AAD2FD792366E01700985858 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD782366E01700985858 /* TableViewController.swift */; };
@@ -15,10 +21,17 @@
 		AAD2FD7E2366E01700985858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FD7D2366E01700985858 /* Assets.xcassets */; };
 		AAD2FD812366E01700985858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD2FD7F2366E01700985858 /* LaunchScreen.storyboard */; };
 		AAD2FD892366E19F00985858 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2FD882366E19F00985858 /* TextFieldViewController.swift */; };
+		AAD779482383B4D800E6A16E /* eraseToAnyPublisherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD779472383B4D800E6A16E /* eraseToAnyPublisherVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA509FF1237BF28500F5A559 /* Example1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1ViewController.swift; sourceTree = "<group>"; };
+		AA37F56623828106003E70A6 /* JustVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustVC.swift; sourceTree = "<group>"; };
+		AA37F56823828149003E70A6 /* CurrentValueSubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentValueSubjectVC.swift; sourceTree = "<group>"; };
+		AA37F56A23828193003E70A6 /* PublishersSequenceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishersSequenceVC.swift; sourceTree = "<group>"; };
+		AA37F56C23828259003E70A6 /* PassthroughSubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassthroughSubjectVC.swift; sourceTree = "<group>"; };
+		AA37F56E238282B3003E70A6 /* assignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignVC.swift; sourceTree = "<group>"; };
+		AA509FF1237BF28500F5A559 /* Example1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1VC.swift; sourceTree = "<group>"; };
+		AA6BC7BD23823C4900B57D70 /* MergeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeVC.swift; sourceTree = "<group>"; };
 		AAD2FD712366E01700985858 /* MyCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD2FD742366E01700985858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD2FD762366E01700985858 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +41,7 @@
 		AAD2FD802366E01700985858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD2FD822366E01700985858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD2FD882366E19F00985858 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
-		AAD2FD8A2366E51E00985858 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AAD779472383B4D800E6A16E /* eraseToAnyPublisherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eraseToAnyPublisherVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +78,18 @@
 				AAD2FD762366E01700985858 /* SceneDelegate.swift */,
 				AAD2FD782366E01700985858 /* TableViewController.swift */,
 				AAD2FD882366E19F00985858 /* TextFieldViewController.swift */,
-				AA509FF1237BF28500F5A559 /* Example1ViewController.swift */,
+				AA509FF1237BF28500F5A559 /* Example1VC.swift */,
+				AA37F56623828106003E70A6 /* JustVC.swift */,
+				AA6BC7BD23823C4900B57D70 /* MergeVC.swift */,
+				AA37F56823828149003E70A6 /* CurrentValueSubjectVC.swift */,
+				AA37F56A23828193003E70A6 /* PublishersSequenceVC.swift */,
+				AA37F56C23828259003E70A6 /* PassthroughSubjectVC.swift */,
+				AA37F56E238282B3003E70A6 /* assignVC.swift */,
+				AAD779472383B4D800E6A16E /* eraseToAnyPublisherVC.swift */,
 				AAD2FD7A2366E01700985858 /* Main.storyboard */,
 				AAD2FD7D2366E01700985858 /* Assets.xcassets */,
 				AAD2FD7F2366E01700985858 /* LaunchScreen.storyboard */,
 				AAD2FD822366E01700985858 /* Info.plist */,
-				AAD2FD8A2366E51E00985858 /* MyPlayground.playground */,
 			);
 			path = MyCombine;
 			sourceTree = "<group>";
@@ -149,8 +168,15 @@
 				AAD2FD892366E19F00985858 /* TextFieldViewController.swift in Sources */,
 				AAD2FD792366E01700985858 /* TableViewController.swift in Sources */,
 				AAD2FD752366E01700985858 /* AppDelegate.swift in Sources */,
-				AA509FF2237BF28500F5A559 /* Example1ViewController.swift in Sources */,
+				AA37F56B23828193003E70A6 /* PublishersSequenceVC.swift in Sources */,
+				AA6BC7BE23823C4900B57D70 /* MergeVC.swift in Sources */,
+				AAD779482383B4D800E6A16E /* eraseToAnyPublisherVC.swift in Sources */,
+				AA37F56923828149003E70A6 /* CurrentValueSubjectVC.swift in Sources */,
+				AA509FF2237BF28500F5A559 /* Example1VC.swift in Sources */,
 				AAD2FD772366E01700985858 /* SceneDelegate.swift in Sources */,
+				AA37F56D23828259003E70A6 /* PassthroughSubjectVC.swift in Sources */,
+				AA37F56723828106003E70A6 /* JustVC.swift in Sources */,
+				AA37F56F238282B3003E70A6 /* assignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

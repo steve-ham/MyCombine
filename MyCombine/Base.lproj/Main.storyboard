@@ -40,10 +40,41 @@
             </objects>
             <point key="canvasLocation" x="971.01449275362324" y="-4.0178571428571423"/>
         </scene>
-        <!--Example1 View Controller-->
+        <!--Erase To Any PublisherVC-->
+        <scene sceneID="Ygv-bA-Pkh">
+            <objects>
+                <viewController storyboardIdentifier="eraseToAnyPublisherVC" id="UXU-0c-JUL" customClass="eraseToAnyPublisherVC" customModule="MyCombine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ke-p0-Mii">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31K-QA-gUC">
+                                <rect key="frame" x="16" y="431" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f9b-ew-8x1" firstAttribute="trailing" secondItem="31K-QA-gUC" secondAttribute="trailing" constant="16" id="IaA-4W-vYX"/>
+                            <constraint firstItem="31K-QA-gUC" firstAttribute="centerX" secondItem="1ke-p0-Mii" secondAttribute="centerX" id="MAg-jc-jgb"/>
+                            <constraint firstItem="31K-QA-gUC" firstAttribute="leading" secondItem="f9b-ew-8x1" secondAttribute="leading" constant="16" id="hi3-cV-XgT"/>
+                            <constraint firstItem="31K-QA-gUC" firstAttribute="centerY" secondItem="1ke-p0-Mii" secondAttribute="centerY" id="mxG-BM-Hsu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f9b-ew-8x1"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="31K-QA-gUC" id="gcc-Ob-hGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYt-nr-2hk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="-27"/>
+        </scene>
+        <!--Example1VC-->
         <scene sceneID="gfu-WV-kIa">
             <objects>
-                <viewController id="cEh-bP-ima" customClass="Example1ViewController" customModule="MyCombine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Example1VC" id="cEh-bP-ima" customClass="Example1VC" customModule="MyCombine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xh2-nq-vfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +103,7 @@
         <!--Text Field View Controller-->
         <scene sceneID="Adq-IC-vry">
             <objects>
-                <viewController id="dIN-dg-qVB" customClass="TextFieldViewController" customModule="MyCombine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TextFieldViewController" id="dIN-dg-qVB" customClass="TextFieldViewController" customModule="MyCombine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ilE-oE-Dth">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
