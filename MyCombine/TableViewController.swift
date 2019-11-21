@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
                            UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "Example2VC") as! Example2VC,
                            UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "eraseToAnyPublisherVC") as! eraseToAnyPublisherVC,
                            UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ZipAndCombineLatestVC") as! ZipAndCombineLatestVC,
-                           MergeVC(), CurrentValueSubjectVC(), PublishersSequenceVC(), PassthroughSubjectVC(), assignVC(), handleEventsVC(), subscribeAndReceiveVC()]
+                           MergeVC(), CurrentValueSubjectVC(), PublishersSequenceVC(), PassthroughSubjectVC(), assignVC(), handleEventsVC(), subscribeAndReceiveVC(), tryMapVC()]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewControllers.count

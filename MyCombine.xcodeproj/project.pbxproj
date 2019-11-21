@@ -14,6 +14,7 @@
 		AA37F56F238282B3003E70A6 /* assignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA37F56E238282B3003E70A6 /* assignVC.swift */; };
 		AA509FF2237BF28500F5A559 /* Example1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509FF1237BF28500F5A559 /* Example1VC.swift */; };
 		AA6BC7BE23823C4900B57D70 /* MergeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BC7BD23823C4900B57D70 /* MergeVC.swift */; };
+		AA9F6693238684670003CDC8 /* tryMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9F6692238684670003CDC8 /* tryMapVC.swift */; };
 		AACBC2BB2383BBD600449370 /* ZipAndCombineLatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACBC2BA2383BBD600449370 /* ZipAndCombineLatestVC.swift */; };
 		AACBC2BD2383CD4600449370 /* Example2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACBC2BC2383CD4600449370 /* Example2VC.swift */; };
 		AACBC2BF2383D7C800449370 /* handleEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACBC2BE2383D7C800449370 /* handleEventsVC.swift */; };
@@ -36,6 +37,7 @@
 		AA37F56E238282B3003E70A6 /* assignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignVC.swift; sourceTree = "<group>"; };
 		AA509FF1237BF28500F5A559 /* Example1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1VC.swift; sourceTree = "<group>"; };
 		AA6BC7BD23823C4900B57D70 /* MergeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeVC.swift; sourceTree = "<group>"; };
+		AA9F6692238684670003CDC8 /* tryMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tryMapVC.swift; sourceTree = "<group>"; };
 		AACBC2BA2383BBD600449370 /* ZipAndCombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipAndCombineLatestVC.swift; sourceTree = "<group>"; };
 		AACBC2BC2383CD4600449370 /* Example2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2VC.swift; sourceTree = "<group>"; };
 		AACBC2BE2383D7C800449370 /* handleEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handleEventsVC.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				AACBC2BA2383BBD600449370 /* ZipAndCombineLatestVC.swift */,
 				AACBC2BE2383D7C800449370 /* handleEventsVC.swift */,
 				AACBC2C02383DD8900449370 /* subscribeAndReceiveVC.swift */,
+				AA9F6692238684670003CDC8 /* tryMapVC.swift */,
 				AAD2FD7A2366E01700985858 /* Main.storyboard */,
 				AAD2FD7D2366E01700985858 /* Assets.xcassets */,
 				AAD2FD7F2366E01700985858 /* LaunchScreen.storyboard */,
@@ -191,6 +194,7 @@
 				AAD2FD772366E01700985858 /* SceneDelegate.swift in Sources */,
 				AA37F56D23828259003E70A6 /* PassthroughSubjectVC.swift in Sources */,
 				AA37F56723828106003E70A6 /* JustVC.swift in Sources */,
+				AA9F6693238684670003CDC8 /* tryMapVC.swift in Sources */,
 				AA37F56F238282B3003E70A6 /* assignVC.swift in Sources */,
 				AACBC2BB2383BBD600449370 /* ZipAndCombineLatestVC.swift in Sources */,
 			);
