@@ -11,13 +11,17 @@ import Combine
 
 class MergeVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        _ = Publishers.Merge(Just("a"), Just("b"))
+        let c = Publishers.Merge(Just("a"), Just("b"))
             .sink { string in
                 print("hsteve string \(string)")
         }
+        
+        cs.append(c)
     }
 }

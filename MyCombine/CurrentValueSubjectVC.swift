@@ -11,6 +11,8 @@ import Combine
 
 class CurrentValueSubjectVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -18,9 +20,10 @@ class CurrentValueSubjectVC: UIViewController {
         // BehaviorSubject
 
         let subject = CurrentValueSubject<String, Never>("string1")
-        subject.sink { string in
+        let c = subject.sink { string in
             print("hsteve string \(string)")
         }
+        cs.append(c)
 
         subject.send("hello")
 

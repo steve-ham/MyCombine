@@ -11,14 +11,16 @@ import Combine
 
 class JustVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        _ = Just("combine").sink { value in
+        let c = Just("combine").sink { value in
           print(value)
         }
-
+        cs.append(c)
     }
     
 }

@@ -11,13 +11,17 @@ import Combine
 
 class PublishersSequenceVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        Publishers.Sequence(sequence: [1, 2, 3])
+        let c = Publishers.Sequence(sequence: [1, 2, 3])
             .sink { number in
                 print("hsteve number \(number)")
         }
+        
+        cs.append(c)
     }
 }

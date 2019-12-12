@@ -18,10 +18,13 @@ class assignVC: UIViewController {
         // bind
 
         class MyClass {
-            var string = ""
+            private var string = ""
+            private var cs = [AnyCancellable]()
+            
             init() {
-                _ = Just("hello")
+                let c = Just("hello")
                 .assign(to: \.string, on: self)
+                cs.append(c)
             }
             
             func sayHello() {

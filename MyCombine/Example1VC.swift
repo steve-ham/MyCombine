@@ -20,6 +20,7 @@ class Example1VC: UIViewController {
     
     let student = Student(grade: 0)
     var myGrade = 0
+    private var cs = [AnyCancellable]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,18 +38,20 @@ class Example1VC: UIViewController {
         
         
         // Version 2
-//        _ = NotificationCenter.default.publisher(for: .graduated, object: nil)
+//        let c1 = NotificationCenter.default.publisher(for: .graduated, object: nil)
 //            .map { $0.userInfo?["NewGrade"] as? Int ?? 0 }
 //            .receive(on: RunLoop.current)
 //            .assign(to: \.grade, on: student)
+//        cs.append(c1)
         
         // Version 3
-        _ = NotificationCenter.default.publisher(for: .graduated, object: nil)
+        let c2 = NotificationCenter.default.publisher(for: .graduated, object: nil)
             .compactMap { $0.userInfo?["NewGrade"] as? Int } // Prevents going further down the stream
             .filter { $0 >= 3 }
             .prefix(3) // After receiving 3, cancel upstream and send completion to downstream.
             .receive(on: RunLoop.current)
             .assign(to: \.grade, on: student)
+        cs.append(c2)
     }
     
     @IBAction private func clickButton(_ sender: UIButton) {

@@ -13,13 +13,17 @@ class eraseToAnyPublisherVC: UIViewController {
     
     @IBOutlet private weak var textField: UITextField!
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        _ = textField.textPublisher.sink { (text) in
+        let c = textField.textPublisher.sink { (text) in
             print("hsteve text \(text)")
         }
+        
+        cs.append(c)
     }
 }
 

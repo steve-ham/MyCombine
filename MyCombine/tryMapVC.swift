@@ -15,11 +15,13 @@ class tryMapVC: UIViewController {
         case myUnknown
     }
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        _ = Just(2)
+        let c = Just(2)
             .tryMap { number -> String in
                 if number == 3 {
                     throw MyError.myUnknown
@@ -36,6 +38,8 @@ class tryMapVC: UIViewController {
         }, receiveValue: { string in
             print("hsteve string \(string)")
         })
+        
+        cs.append(c)
     }
 }
 

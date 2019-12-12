@@ -15,12 +15,13 @@ struct Example2Data: Codable {
 
 class Example2VC: UIViewController {
     
+    private var cs = [AnyCancellable]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Example 1
-//        _ = NotificationCenter.default.publisher(for: .newTrickDownloaded)
+//        let c1 = NotificationCenter.default.publisher(for: .newTrickDownloaded)
 //            .map { $0.userInfo?["data"] as! Data }
 //            .decode(type: Example2Data.self, decoder: JSONDecoder())
 //            .catch { _ in Just(Example2Data(title: "Title2")) }
@@ -28,9 +29,9 @@ class Example2VC: UIViewController {
 //            .sink(receiveValue: { example2Data in
 //                print("hsteve version1 \(example2Data)")
 //            })
-        
+//        cs.append(c1)
         // Example 2
-        _ = NotificationCenter.default.publisher(for: .newTrickDownloaded)
+        let c2 = NotificationCenter.default.publisher(for: .newTrickDownloaded)
             .map { $0.userInfo?["data"] as! Data }
             .flatMap({ data in
                 Just(data)
@@ -41,6 +42,8 @@ class Example2VC: UIViewController {
             .sink(receiveValue: { example2Data in
                 print("hsteve version2 \(example2Data)")
             })
+        
+        cs.append(c2)
     }
     
     

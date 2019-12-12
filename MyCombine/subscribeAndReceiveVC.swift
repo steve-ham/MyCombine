@@ -11,11 +11,13 @@ import Combine
 
 class subscribeAndReceiveVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        _ = Just(3)
+        let c = Just(3)
             .handleEvents(receiveOutput: { _ in
                 print("hsteve handleEvents isMainThread \(Thread.isMainThread)")
             })
@@ -24,5 +26,6 @@ class subscribeAndReceiveVC: UIViewController {
             .sink { number in
                 print("hsteve sink isMainThread \(Thread.isMainThread)")
         }
+        cs.append(c)
     }
 }

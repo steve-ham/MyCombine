@@ -11,6 +11,8 @@ import Combine
 
 class PassthroughSubjectVC: UIViewController {
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -18,9 +20,10 @@ class PassthroughSubjectVC: UIViewController {
         // PublishSubject
 
         let subject = PassthroughSubject<String, Never>()
-        subject.sink { string in
+        let c = subject.sink { string in
             print("hsteve string \(string)")
         }
+        cs.append(c)
 
         subject.send("hello")
     }
