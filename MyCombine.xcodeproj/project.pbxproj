@@ -38,6 +38,7 @@
 		AA509FF1237BF28500F5A559 /* Example1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1VC.swift; sourceTree = "<group>"; };
 		AA6BC7BD23823C4900B57D70 /* MergeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeVC.swift; sourceTree = "<group>"; };
 		AA9F6692238684670003CDC8 /* tryMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tryMapVC.swift; sourceTree = "<group>"; };
+		AAB66FDE23FE916800AE0924 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		AACBC2BA2383BBD600449370 /* ZipAndCombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipAndCombineLatestVC.swift; sourceTree = "<group>"; };
 		AACBC2BC2383CD4600449370 /* Example2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2VC.swift; sourceTree = "<group>"; };
 		AACBC2BE2383D7C800449370 /* handleEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handleEventsVC.swift; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 				AACBC2BE2383D7C800449370 /* handleEventsVC.swift */,
 				AACBC2C02383DD8900449370 /* subscribeAndReceiveVC.swift */,
 				AA9F6692238684670003CDC8 /* tryMapVC.swift */,
+				AAB66FDE23FE916800AE0924 /* MyPlayground.playground */,
 				AAD2FD7A2366E01700985858 /* Main.storyboard */,
 				AAD2FD7D2366E01700985858 /* Assets.xcassets */,
 				AAD2FD7F2366E01700985858 /* LaunchScreen.storyboard */,

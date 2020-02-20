@@ -21,7 +21,7 @@ class ZipAndCombineLatestVC: UIViewController {
         view.backgroundColor = .systemBackground
         
         let c1 = Publishers.Zip($switchAIsOn, $switchBIsOn) // 둘다 짝 맞게 들어와야 emit 됨
-            .receive(on: RunLoop.current)
+            //.receive(on: RunLoop.current)
             .map { $0 && $1 }
             .sink { bool in
                 print("hsteve Zip \(bool)")
