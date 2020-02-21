@@ -17,7 +17,7 @@ class CurrentValueSubjectVC: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
-        // BehaviorSubject
+        // BehaviorRelay
 
         let subject = CurrentValueSubject<String, Never>("string1")
         let c = subject.sink { string in

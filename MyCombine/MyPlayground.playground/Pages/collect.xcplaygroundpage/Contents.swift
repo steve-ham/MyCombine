@@ -1,3 +1,7 @@
+
+//: [Previous](@previous)
+
+import Foundation
 import Combine
 
 ["A", "B", "C", "D", "E"]
@@ -7,7 +11,12 @@ import Combine
           receiveValue: { print($0) })
 
 ["A", "B", "C", "D", "E"]
-.publisher
-.collect(2)
-.sink(receiveCompletion: { print($0) },
-      receiveValue: { print($0) })
+    .publisher
+    .collect(2)
+    .sink(receiveCompletion: { print($0) },
+          receiveValue: { print($0) })
+
+
+//: [Next](@next)
+
+
