@@ -28,7 +28,7 @@ class eraseToAnyPublisherVC: UIViewController {
 }
 
 extension UITextField {
-    // Observable()
+    // Observable(). Read only.
     var textPublisher: AnyPublisher<String, Never> {
         NotificationCenter.default
             .publisher(for: UITextField.textDidChangeNotification, object: self)
