@@ -3,5 +3,6 @@
     <pages>
         <page name='Combine2'/>
         <page name='collect'/>
+        <page name='handleEvents'/>
     </pages>
 </playground>
