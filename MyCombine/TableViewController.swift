@@ -34,15 +34,30 @@ class TableViewController: UITableViewController {
         navigationController?.pushViewController(viewControllers[indexPath.row], animated: true)
     }
     
+    private var cs = [AnyCancellable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // 1
-        let future = futureIncrement(integer: 1, afterDelay: 1)
-        // 2
-        _ = future
-            .sink(receiveCompletion: { print($0) },
-                  receiveValue: { print($0) })
+//        // 1
+//        let future = futureIncrement(integer: 1, afterDelay: 1)
+//        // 2
+//        _ = future
+//            .sink(receiveCompletion: { print($0) },
+//                  receiveValue: { print($0) })
+        
+        let shared = URLSession.shared.dataTaskPublisher(for: URL(string: "https://www.raywenderlich.com")!)
+            .map(\.data)
+            .print("shared")
+            .share()
+        print("subscribing first")
+        let subscription1 = shared.sink( receiveCompletion: { _ in },
+          receiveValue: { print("subscription1 received: '\($0)'") }
+        )
+        print("subscribing second")
+        let subscription2 = shared.sink( receiveCompletion: { _ in },
+          receiveValue: { print("subscription2 received: '\($0)'") }
+        )
     }
     
     func futureIncrement(integer: Int, afterDelay delay: TimeInterval) -> Future<Int, Never> {
@@ -53,8 +68,6 @@ class TableViewController: UITableViewController {
             }
         }
     }
-
-
     
 
 }
